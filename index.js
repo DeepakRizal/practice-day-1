@@ -79,3 +79,22 @@ function arrayToString(arr) {
 }
 
 console.log(typeof arrayToString([1, 2, 3, 4, 5]));
+
+//function declarations and function expressions
+
+//function declarations
+
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+
+const age1 = calcAge1(1991);
+console.log(age1);
+
+//function expression
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const age2 = calcAge2(2000);
+console.log(age2);
